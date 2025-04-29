@@ -1,0 +1,307 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: white; 
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #93BBFF;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 20px 25px 30px;
+    text-align: left; /* Aliniere pe stânga */
+}
+
+.hero h1 {
+    font-size: 64px;
+    color: #1F4AD8;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #1F4AD8;
+    margin-bottom: 5px;
+}
+
+/* Content Main */
+.content {
+    display: flex;
+    justify-content: space-between; /* Împinge la stânga și dreapta */
+    align-items: flex-start;
+    margin: 0px auto;
+    max-width: 1700px;
+    padding:  40px;
+}
+
+/* Left side */
+.left-content {
+    display: flex;
+    flex-direction: row; /*imaginea și textul pe același rând */
+    align-items: flex-start; 
+    gap: 30px; /* Spațiu între imagine și text/butoane */
+}
+
+/* Imaginea */
+.left-content img {
+    width: 211px;
+    height: 326px;
+    object-fit: cover; 
+}
+
+/* Textul */
+.left-content .text {
+    text-align: left; /* textul la stânga */
+    padding: 0px; 
+    margin-bottom: 20px;
+}
+
+/* Butoanele */
+.left-content .buttons {
+    display: flex;
+    flex-direction: column; /butoanele pe verticală */
+    gap: 35px; /* Spațiu între butoane */
+    align-items: flex-start; /*  butoanele la stânga, lângă text */
+}
+
+.buttons button {
+    width: 256px;
+    height: 46px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-primar {
+    background-color: #93BBFF;
+    color: black;
+}
+
+.button-primar:hover {
+    background-color: #1F4AD8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button-secundar {
+    background-color: white;
+    color:black;
+    border: 2px solid#93BBFF!important;
+}
+
+.button-secundar:hover {
+    background-color: #1F4AD8;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Right side */
+h3 {
+font-size: 32px;
+color: #1F4AD8;
+font-weight: normal;}
+
+.right-content {
+    text-align: left; /* Aliniere pe stânga*/
+    max-width: 600px;
+}
+
+.right-content img {
+    width: 502px;
+    height: 310px;
+    border-radius: 0px;
+}
+
+.right-content .subtitle {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #1F4AD8;
+    font-weight:normal;
+    text-align: left;
+}
+
+.left-content, .right-content {
+    max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* ABOUT SECTION STIL */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Imaginea sus */
+  padding: 30px;
+  gap: 20px; /* Spațiu între text și imagine */
+}
+
+.text {
+  max-width: 500px;
+}
+
+.floating-image {
+  width: 500px;
+  height: auto;
+  align-self: flex-start; 
+  margin-top: -140px; 
+}
+
+.portfolio-title {
+    text-align: center; 
+    font-size: 36px; 
+    color: #1F4AD8; 
+    margin-bottom: 10px; /* Spațiu sub titlu */
+  }
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .portfolio-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .portfolio-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .portfolio-nav a:hover {
+    color: #93BBFF;
+  }
+
+
+  .image-row {
+    display: flex; /* Aliniere pe orizontală */
+    justify-content: space-between; /* Spațiu egal între imagini */
+    gap: 0px; /* Spațiu între imagini */
+    padding: 50px;
+  }
+  
+  .image-row img {
+    width: 200px; 
+    height:256px;
+    object-fit: cover; 
+  }
+  
+  .image-row .special {
+    width: 361px; /* Ajustează dimensiunea doar pentru imaginea 3 */
+    height:256px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px px;
+    background-color: #93BBFF;
+    color: white;
+    flex-wrap: wrap; /* Permite alinierea flexibilă a elementelor */
+  }
+  
+  .footer-logo img {
+    width: 100px; /* Ajustează dimensiunea logo-ului */
+  }
+  
+  .footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spațiu între număr și email */
+    flex: 1;
+  }
+  
+  .contact-info, .email-info {
+    font-size: 18px;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 27px;
+    height: 27px;
+  }
+  
+  .footer-social a:hover .social-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  
+  .footer-copyright {
+    width: 100%;
+    text-align: center; /* Aliniere la centru pentru copyright */
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .footer .footer-social, .footer .footer-center, .footer .footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
